@@ -3,6 +3,7 @@
 :root {
     --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
+    --font-principal: "inter";
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
     }
@@ -10,6 +11,9 @@
     body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
+    font-family: 'inter', 'sans-serif';
+    font-size: 16px;
+    font-weight: 400px;
     }
 
     * {
@@ -18,11 +22,25 @@
     }
 
     .principal {
-    background-image: url("/novoalura-main/alura /IMGS/Background.png");
+    background-image: url("/alura /IMGS/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
     }
 
     .container {
+        display: grid;
     height: 100vh;
+    grid-template-columns: 33% 33% 33%;
+    }
+
+    .container__aviso {
+        font-size: 12px;
+    }
+
+    .container_botao {
+        background-color: var(--botao-azul);
+        border-radius: 5px;
+        padding: 1mm;
+        color: var(--branco-principal);
+        display: block;
     }
